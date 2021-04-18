@@ -1,0 +1,19 @@
+@keyframes rotateOne {
+    0%{ transform: rotate(45deg) }
+  100%{ transform: rotate(405deg) }
+}
+
+@keyframes rotateTwo {
+  0%{ transform: rotate(390deg) }
+100%{ transform: rotate(30deg) }
+}
+
+@keyframes rotateThree {
+  0%{ transform: rotate(220deg) }
+100%{ transform: rotate(580deg) }
+}
+
+@keyframes rotateFour {
+  0%{ transform: rotate(480deg) }
+100%{ transform: rotate(120deg) }
+}

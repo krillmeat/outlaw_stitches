@@ -1,44 +1,221 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>TITLE</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8">
+    <title>OUTLAW STITCHES</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="CSS/styles.css">
-    </head>
-    <body>
-        <!-- NAVIGATION -->
-        <div class='nav-wrapper'>
-            <nav class='top'>
-                <div class='mobile'>
-                    <a class='logo' href='#'>
-                        Logo
-                    </a>
-                    <button class='mobile-menu'>
-                        <div class='rect'></div><div class='rect'></div><div class='rect'></div>
-                    </button> 
-                </div>
-                <div class='desktop'>
-                    <a class='logo' href="#">
-                        Logo
-                    </a>
-                    <ul>
-                        <li><a href='#'>Link</a></li>
-                        <li><a href='#'>Link</a></li>
-                        <li><a href='#'>Link</a></li>
-                    </ul>
-                </div>
-            </nav>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="CSS/animations.css">
+    <link rel="stylesheet" href="CSS/fonts.css">
+    <link rel="stylesheet" href="CSS/styles.css">    
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <div class='nav-wrapper'>
+        <nav class='social'>
+          <p>Instagram</p>
+          <img src='MEDIA/instagram-icon.svg'/>
+          <p>outlaw.stitches</p>
+        </nav>
+        <nav class='work-selector'>
+          <ul>
+            <li><button class='work-button' data-label='heart'></button></li>
+            <li><button class='work-button' data-label='leaf'></button></li>
+            <li><button class='work-button' data-label='burst'></button></li>
+            <li><button class='work-button' data-label='knife'></button></li>
+            <li><button class='work-button' data-label='howdy'></button></li>
+            <li><button class='work-button' data-label='cat'></button></li>
+            <li><button class='work-button' data-label='cut'></button></li>
+            <li><button class='work-button' data-label='sun'></button></li>
+          </ul>
+        </nav>
+    </div>
+
+    <!-- HERO -->
+    <section id='hero' class='hero'>
+      <div class='target-pattern'>
+        <svg version='1.1' xmlns="http://www.w3.org/2000/svg" viewBox='0 0 1920 500'><g><circle cx="960" cy="250" r="200"/><line x1="960" y1="45" x2="970" y2="55"/><line x1="970" y1="45" x2="960" y2="55"/></g></svg>
+        <svg version='1.1' xmlns="http://www.w3.org/2000/svg" viewBox='0 0 1920 500'><g><circle cx="960" cy="250" r="280"/><line x1="960" y1="-35" x2="970" y2="-25"/><line x1="970" y1="-35" x2="960" y2="-25"/></g></svg>
+        <svg version='1.1' xmlns="http://www.w3.org/2000/svg" viewBox='0 0 1920 500'><g><circle cx="960" cy="250" r="360"/><line x1="960" y1="-105" x2="970" y2="-115"/><line x1="970" y1="-105" x2="960" y2="-115"/></g></svg>
+        <svg version='1.1' xmlns="http://www.w3.org/2000/svg" viewBox='0 0 1920 500'><g><circle cx="960" cy="250" r="440"/><line x1="960" y1="-195" x2="970" y2="-185"/><line x1="970" y1="-195" x2="960" y2="-185"/></g></svg>
+        <svg version='1.1' xmlns="http://www.w3.org/2000/svg" viewBox='0 0 1920 500'><g><circle cx="960" cy="250" r="520"/></g></svg>
+      </div>
+      <div class='content-wrap'>
+        <div class='center-frame'>
+          <img data-label='main-logo' data-state='active' src='MEDIA/outlaw-stitches_main-logo.svg'/>
+        </div>
+      </div>
+    </section>
+
+    <section id='gallery' class='gallery'>
+      <div class='target-pattern'>
+        <svg version='1.1' xmlns="http://www.w3.org/2000/svg" viewBox='0 0 1920 500'><g><circle cx="960" cy="250" r="200"/><line x1="960" y1="45" x2="970" y2="55"/><line x1="970" y1="45" x2="960" y2="55"/></g></svg>
+        <svg version='1.1' xmlns="http://www.w3.org/2000/svg" viewBox='0 0 1920 500'><g><circle cx="960" cy="250" r="280"/><line x1="960" y1="-35" x2="970" y2="-25"/><line x1="970" y1="-35" x2="960" y2="-25"/></g></svg>
+        <svg version='1.1' xmlns="http://www.w3.org/2000/svg" viewBox='0 0 1920 500'><g><circle cx="960" cy="250" r="360"/><line x1="960" y1="-105" x2="970" y2="-115"/><line x1="970" y1="-105" x2="960" y2="-115"/></g></svg>
+        <svg version='1.1' xmlns="http://www.w3.org/2000/svg" viewBox='0 0 1920 500'><g><circle cx="960" cy="250" r="440"/><line x1="960" y1="-195" x2="970" y2="-185"/><line x1="970" y1="-195" x2="960" y2="-185"/></g></svg>
+      </div>
+      <div class='content-wrap'>
+      <div class='gallery-button-wrap'>
+        <button class='work-button' data-label='heart'><img data-label='heart' data-state='' src='MEDIA/STITCHES/outlaw-stitches-heart.jpg'/></button>
+        <button class='work-button' data-label='leaf'><img data-label='leaf' data-state='' src='MEDIA/STITCHES/outlaw-stitches-leaf.jpg'/></button>
+        <button class='work-button' data-label='burst'><img data-label='burst' data-state='' src='MEDIA/STITCHES/outlaw-stitches-burst.jpg'/></button>
+        <button class='work-button' data-label='cut'><img data-label='cut' data-state='' src='MEDIA/STITCHES/outlaw-stitches-cut.jpg'/></button>
+        <button class='work-button' data-label='cat'><img data-label='cat' data-state='' src='MEDIA/STITCHES/outlaw-stitches-cat.jpg'/></button>
+        <button class='work-button' data-label='howdy'><img data-label='howdy' data-state='' src='MEDIA/STITCHES/outlaw-stitches-howdy.jpg'/></button>
+        <button class='work-button' data-label='knife'><img data-label='knife' data-state='' src='MEDIA/STITCHES/outlaw-stitches-dagger.jpg'/></button>
+        <button class='work-button' data-label='sun'><img data-label='sun' data-state='' src='MEDIA/STITCHES/outlaw-stitches-sun.jpg'/></button>
+      </div>
+      <div class='gallery-work-wrap'>
+        <button class='back-to-gallery'>Back to Gallery</button>
+
+        <!-- PAPER SCRAP HEART -->
+        <div class='work-item' data-label='heart'>
+          <div class='left'>
+            <img src='MEDIA/STITCHES/outlaw-stitches-heart.jpg'/>
+          </div>
+          <div class='right'>
+            <h3>Paper Scrap Heart</h3>
+            <p class='date'>11 November, 2020</p>
+            <p class='description'>&ldquo;Heart, you are restless as a paper scrap,&rdquo; I wanted to create something inspired by one of my favorite poems, 'Unfortunate' by Rupert Brooke. Hope ya like it, it took forever. 🥀</p>
+            <ul class='hashtags'><li>embroidery</li><li>handembroidery</li><li>stitching</li><li>handstitching</li><li>hoopart</li><li>fiberarts</li><li>floralembroidery</li><li>traditionaltattoo</li><li>dmcthreads</li></ul>
+            <a href='https://www.instagram.com/p/CNfuwyDlcya/'>See Instagram Post</a>
+          </div>
         </div>
 
-        <!-- HERO -->
-        <section id='hero' class='hero'><div class='content-wrap'>
+        <!-- MONSTERA DELICIOSA -->
+        <div class='work-item' data-label='leaf'>
+          <div class='left'>
+            <img src='MEDIA/STITCHES/outlaw-stitches-leaf.jpg'/>
+          </div>
+          <div class='right'>
+            <h3>Monstera Deliciosa</h3>
+            <p class='date'>1 April, 2021</p>
+            <p class='description'>🌿Ladies and gents the COLLAB IS BACK! Obviously we didn't hold tight to the monthly idea and are instead just going to make it happen as we feel like it. Finally my two main jams -plants & embroidery- collided as this time we both made the beautiful Monstera deliciosa our subjects! Tyler (@tylervslife ) wrote a fun, smart, and unpredictable short story involving a heist and big ol' plant. I also did something completely different and painted the fabric of my embroidery instead of shading with floss and I actually really love how it looks.</p>
+            <p class='description'>Thanks for taking the time to look and read it truly means so much to us. 💚</p>
+            <ul class='hashtags'><li>embroidery</li><li>handembroidery</li><li>stitching</li><li>handstitching</li><li>hoopart</li><li>fiberarts</li><li>plantembroidery</li><li>monsteradeliciosa</li></ul>
+            <button href='https://www.instagram.com/p/CNfuwyDlcya/'>Read Short Story</button>
+            <a href='https://www.instagram.com/p/CNfuwyDlcya/'>See Instagram Post</a>
+          </div>
+        </div>
 
-        </div></section>
+        <!-- BLOOMS -->
+        <div class='work-item' data-label='burst'>
+          <div class='left'>
+            <img src='MEDIA/STITCHES/outlaw-stitches-burst.jpg'/>
+          </div>
+          <div class='right'>
+            <h3>Blooms</h3>
+            <p class='date'>4 March, 2021</p>
+            <p class='description'>Lately I've had a desire to just put colors down without following a drawing or stencil I've made so that led to these color bursts. The first (right) one was inspired by space and the ~cosmos~, then I was feeling valentine's-y, then I was just really feeling green. Plus I love anything where I can pick a color palette and then just create. This style is my new favorite jam so be prepared for more. 🌟🌈🌟</p>
+            <ul class='hashtags'><li>embroidery</li><li>handembroidery</li><li>stitching</li><li>handstitching</li><li>hoopart</li><li>fiberarts</li><li>abstractembroidery</li></ul>
+            <a href='https://www.instagram.com/p/CMBBdUuFi2a/'>See Instagram Post</a>
+          </div>
+        </div>
 
-        <!-- SCRIPTS -->
-        <script type='text/javascript' src='JS/utils.js'></script>
-        <script type='text/javascript' src='JS/scripts.js'></script>
-    </body>
+        <!-- Out West -->
+        <div class='work-item' data-label='howdy'>
+          <div class='left'>
+            <img src='MEDIA/STITCHES/outlaw-stitches-howdy.jpg'/>
+          </div>
+          <div class='right'>
+            <h3>Out West</h3>
+            <p class='date'>24 January, 2021</p>
+            <p class='description'>🏜 Howdy party people! For our first ever collaboration @tylervslife and I each created something around the idea of a new beginning or fresh start. Tyler has written a cozy, western vignette about starting on a new adventure and I've created this little guy with about a thousand satin stitches to accompany it. This was really cool and I love that I got to make something with my best friend and biggest support and now can share it with y'all. Please give this story a read, this guy is too ridiculously talented for you to sleep on</p>
+            <ul class='hashtags'><li>embroidery</li><li>handembroidery</li><li>stitching</li><li>handstitching</li><li>hoopart</li><li>fiberarts</li><li>westernembroidery</li></ul>
+            <button href='https://www.instagram.com/p/CNfuwyDlcya/'>Read Short Story</button>
+            <a href='https://www.instagram.com/p/CMBBdUuFi2a/'>See Instagram Post</a>
+            <div class='short-story'>
+              <h4>Something Special Out West</h4>
+              <p class='author'>Written By Tyler Gruenzner</p>
+              <p class='ss-italic'>Not much happens in the little Texas town of Chesterfield County. It is a peaceful community where all its townsfolk play a purpose in the machine that makes the city move. This story is about an unknown rider that came and went, unlike the many that came before them and the many that came on their heels.</p>
+              <p>Quigley, the sole barkeep, and brewmaster of* Chesterfield County, TX, po*pped the top of a bottle from one of his freshest batches and dipped the neck down into a frosted mug, filling the void with suds to the rim. He rotated the glass clockwise during the rise, trying his best to limit the foam and the bubbles. Quigley inspected the drink, making sure it was up to his standards.</p>
+              <p>“Aw, hell Quig,” Mason Darren exasperated from his barstool, “Would you hurry it up,” he slapped his palm on the chestnut countertop, “I am dyin’ of thirst over here!”</p>
+              <p>The bartender brought the glass up to his rosy nose and inhaled the scent to make sure that it was not skunked over. The malted yeast and barley tickled his senses and made the heavy black bags under his eyes flinch upwards towards his sockets. He put the mug down on the bar and slid it down to the saloon’s regular.</p>
+              <p>“Sorry, Sheriff Mason,” Quigley tipped his hat to the lawman, “Just wanted to make sure it was perfect for you,”</p>
+              <p>“Perfect?” The sheriff cocked his head at the bartender, “It is a damn beer, ain’t no sense on makin’ such a fuss over it,” he gripped the glass and threw it back, swallowing a deep gulp of the suds.</p>
+              <p>“Come on now, Mason,” the barkeep lamented, “Don't go talkin' off my drink. You know it means a lot to me,"</p>
+              <p>The lawman looked at his half-empty mug and brought it up to finish it off in another single swallow. He digested the thick brew and let out a belch that took priority over the rest of the bar's commotions.</p>
+              <p>"Well," Mason pushed out with a mustache full of foam, "I ain't know 'perfection' about a damn drink before. But I will tell you it is a pretty good beer," he admitted, pushing his stool back and tipping his cowboy hat to the barkeep.</p>
+              <p>He reached into his pockets and pulled loose some change and silver pieces to pay his tab.</p>
+              <p>"Don't worry about it, Mason," Quigley shook off the lawman's patronage, "Isn’t but one beer. It is on me tonight.” He took back the mug and rinsed the glass off in the dish sink.</p>
+              <p>Manson grinned and accepted the act of kindness and took his leave from the drinking hole.</p>
+              <p>Quigley watched the sheriff exit the saloon; he always like to keep an eye on the man’s beat when he was in the room, he was notorious for using his badge to push the rest of the regulars around. But tonight, was a good night.</p>
+              <p>	“Now, what the hell was that?” A voice broke the routine of Quigley’s dish duties.</p>
+              <p>The barkeep looked up from his sink; Wyatt Makenzie sat dumbfounded and slack-jawed at Quigley’s good-will towards the law-enforcer.</p>
+              <p>“Now, Wyatt, don’t go given’ me no shit,” Quigley laughed.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cut -->
+        <div class='work-item' data-label='cut'>
+          <div class='left'>
+            <img src='MEDIA/STITCHES/outlaw-stitches-cut.jpg'/>
+          </div>
+          <div class='right'>
+            <h3>Cutting Cord</h3>
+            <p class='date'>31 December, 2020</p>
+            <p class='description'>Wanted to churn something out real quick in honor of the end of this insane year. So here is my cord cutting piece. May you cut ties with any baggage and negativity you can as you go into this next year of life. And never forget that time is arbitrary and tomorrow is just another day, so it's as good a time as any to make positive changes and move toward the future you want. 🕯🕯🕯</p>
+            <ul class='hashtags'><li>embroidery</li><li>handembroidery</li><li>stitching</li><li>handstitching</li><li>hoopart</li><li>fiberarts</li></ul>
+            <a href='https://www.instagram.com/p/CMBBdUuFi2a/'>See Instagram Post</a>
+          </div>
+        </div>
+
+        <!-- Dagger -->
+        <div class='work-item' data-label='knife'>
+          <div class='left'>
+            <img src='MEDIA/STITCHES/outlaw-stitches-dagger.jpg'/>
+          </div>
+          <div class='right'>
+            <h3>Dagger</h3>
+            <p class='date'>22 November, 2020</p>
+            <p class='description'>Recently when looking for inspiration I've been finding myself drawn more and more to tattoo designs, specifically flash sheet designs, so obviously a dagger was in my future. For this guy I used satin floss and long satin stitches to try to make the entire thing look as shiny and sharp as possible.</p>
+            <ul class='hashtags'><li>embroidery</li><li>handembroidery</li><li>stitching</li><li>handstitching</li><li>hoopart</li><li>fiberarts</li><li>dagger</li><li>traditionalart</li><li>modernembroidery</li></ul>
+            <a href='https://www.instagram.com/p/CMBBdUuFi2a/'>See Instagram Post</a>
+          </div>
+        </div>
+
+        <!-- Sun -->
+        <div class='work-item' data-label='sun'>
+          <div class='left'>
+            <img src='MEDIA/STITCHES/outlaw-stitches-sun.jpg'/>
+          </div>
+          <div class='right'>
+            <h3>The Sun And Moon</h3>
+            <p class='date'>22 November, 2020</p>
+            <p class='description'>Bought this big house dress forever ago for like $5 and pretty much didn't touch it for years. Then my mom got me @threadhoney embroidery book and I saw this pattern and was suddenly inspired to do something. Now I plan on using this for lots of different embroidery ideas and practice bc I'm thrilled with how this turned out.</p>
+            <ul class='hashtags'><li>embroidery</li><li>handembroidery</li><li>stitching</li><li>handstitching</li><li>hoopart</li><li>fiberarts</li><li>traditionalart</li><li>modernembroidery</li></ul>
+            <a href='https://www.instagram.com/p/CMBBdUuFi2a/'>See Instagram Post</a>
+          </div>
+        </div>
+
+        <!-- The Planchette -->
+        <div class='work-item' data-label='cat'>
+          <div class='left'>
+            <img src='MEDIA/STITCHES/outlaw-stitches-cat.jpg'/>
+          </div>
+          <div class='right'>
+            <h3>The Planchette</h3>
+            <p class='date'>15 November, 2020</p>
+            <p class='description'>this guy is actually one of my personal favorites. I took several different planchette designs and combined/changed 'em up in procreate to get this. spooky year 'round. 💫</p>
+            <ul class='hashtags'><li>embroidery</li><li>handembroidery</li><li>stitching</li><li>handstitching</li><li>hoopart</li><li>fiberarts</li><li>ouija</li><li>planchette</li></ul>
+            <a href='https://www.instagram.com/p/CHoiHbTlvHC/'>See Instagram Post</a>
+          </div>
+        </div>
+
+      </div> <!-- END - gallery-work-wrap -->
+    </div></section>
+
+    <footer>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script type='text/javascript' src='JS/utils.js'></script>
+    <script type='text/javascript' src='JS/scripts.js'></script>
+
+    <script type='text/javascript' src='JS/work-selector.js'></script>
+  </body>
 </html>
